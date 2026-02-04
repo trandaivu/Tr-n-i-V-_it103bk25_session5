@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quản lý sách trả về</title>
+</head>
+<body>
+  <script>
+    let returnedBooks = [];
+    let quantity = +prompt("Bạn muốn trả bao nhiêu cuốn sách ?");
+
+    for ( let i = 0 ; i < quantity ; i++ ) {
+      let bookName = prompt(`nhập tên sách vào mảng : ${i} `);
+      returnedBooks.push(bookName);
+    }
+
+    console.log("Tổng số sách đã được trả: " + returnedBooks.length);
+    console.log("Danh sách sách đã trả:");
+
+    for (let i = 0; i < returnedBooks.length; i++) {
+    console.log((i + 1) + ". " + returnedBooks[i]);
+    }
+
+  </script>
+</body>
+</html>
